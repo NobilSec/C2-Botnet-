@@ -79,10 +79,10 @@ def center_text(text):
 
 def banner():
     print("""
-    ╔══════════════════════════════════════════════════════════════
-    ║                   BOTNET CONTROL PANEL v3.0                   
-    ║           The Most Powerful DDoS Attack Framework            
-    ╚══════════════════════════════════════════════════════════════
+    +====================================================================+
+    |                   BOTNET CONTROL PANEL v3.0                        |
+    |           The Most Powerful DDoS Attack Framework                  |
+    +====================================================================+
     """)
 
 def check_target_status(target):
@@ -576,9 +576,9 @@ def login_system():
     while attempts < max_attempts:
         clear()
         print_centered("""
-╔══════════════════════════════════════════════════════════════
-║                   SECURE LOGIN TERMINAL                      
-╚══════════════════════════════════════════════════════════════
++====================================================================+
+|                   SECURE LOGIN TERMINAL                            |
++====================================================================+
 """)
         
         username = input("\nUsername > ")
@@ -629,27 +629,26 @@ def main():
         ██████████▄▄▄▄▄▄▄██████████
         ███████████████████████████\033[0m
         """)
-        ╔══════════════════════════════════════════════════════════════════════════
-        ║                      ADVANCED NETWORK STRESS TESTING                      
-        ║                        SECURITY RESEARCH TOOLKIT                          
-        ╠══════════════════════════════════════════════════════════════════════════
-        ║                        Network Analysis Methods                           
-        ╠══════════════════════════════════════════════════════════════════════════
-        ║ [1] L7: HTTP(S) Load Test \033[33mPRO\033[0m   Performance analysis of web services
-        ║ [2] L4: UDP Stress Test \033[33mPRO\033[0m     Network capacity measurement
-        ║ [3] L4: TCP SYN Analysis \033[33mPRO\033[0m    Connection handling evaluation
-        ║ [4] L7: Slowloris Test \033[33mPRO\033[0m      Connection pool saturation testing
-        ║ [5] L4: TCP Connection Test    System resource monitoring
-        ║ [6] L3: DNS Response Analysis  DNS infrastructure testing
-        ║ [7] L3: ICMP Echo Test         Network latency measurement
-        ║ [8] L7: SSL/TLS Benchmark      Crypto processing assessment
-        ║ [9] L4: Minecraft Server Test  90M Requests + Protection Bypass
-        ║ [10] Exit                      Terminate testing suite
-        ╠══════════════════════════════════════════════════════════════════════════
-        ║    NOTICE: For authorized security testing and research only. Ensure     
-        ║            you have explicit permission before running any tests.        
-        ╚══════════════════════════════════════════════════════════════════════════
-        """)
+        print("+==============================================================================+")
+        print("|                      ADVANCED NETWORK STRESS TESTING                         |")
+        print("|                        SECURITY RESEARCH TOOLKIT                             |")
+        print("+==============================================================================+")
+        print("|                        Network Analysis Methods                              |")
+        print("+==============================================================================+")
+        print("| [1] L7: HTTP(S) Load Test \033[33mPRO\033[0m   Performance analysis of web services       |")
+        print("| [2] L4: UDP Stress Test \033[33mPRO\033[0m     Network capacity measurement               |")
+        print("| [3] L4: TCP SYN Analysis \033[33mPRO\033[0m    Connection handling evaluation             |")
+        print("| [4] L7: Slowloris Test \033[33mPRO\033[0m      Connection pool saturation testing         |")
+        print("| [5] L4: TCP Connection Test    System resource monitoring                    |")
+        print("| [6] L3: DNS Response Analysis  DNS infrastructure testing                    |")
+        print("| [7] L3: ICMP Echo Test         Network latency measurement                   |")
+        print("| [8] L7: SSL/TLS Benchmark      Crypto processing assessment                  |")
+        print("| [9] L4: Minecraft Server Test  90M Requests + Protection Bypass              |")
+        print("| [10] Exit                      Terminate testing suite                       |")
+        print("+==============================================================================+")
+        print("|    NOTICE: For authorized security testing and research only. Ensure         |")
+        print("|            you have explicit permission before running any tests.            |")
+        print("+==============================================================================+")
         choice = input("┌──(BOTNET)─[~]\n└─$ ")
         
         if choice == "10":
@@ -664,14 +663,14 @@ def main():
             
             clear()
             print(f"""
-╔══════════════════════════════════════
-║        Minecraft Attack Started!     
-╠══════════════════════════════════════
-║ Target: {target:<27} 
-║ Port: 25565 (Minecraft Default)
-║ Duration: {duration} seconds{' '*(19-len(str(duration)))} 
-║ Target Status: {target_status:<21}
-╚══════════════════════════════════════
++======================================+
+|        Minecraft Attack Started!     |
++======================================+
+| Target: {target:<27} 
+| Port: 25565 (Minecraft Default)
+| Duration: {duration} seconds{' '*(19-len(str(duration)))} 
+| Target Status: {target_status:<21}
++======================================+
 """)
             
             # Start attack processes
@@ -687,10 +686,10 @@ def main():
                 
             final_status = check_target_status(target)
             print(f"""
-╔══════════════════════════════════════
-║      Minecraft Attack Completed! 🎯  
-║ Final Target Status: {final_status:<16}
-╚══════════════════════════════════════
++======================================+
+|      Minecraft Attack Completed! 🎯  |
+| Final Target Status: {final_status:<16}
++======================================+
 """)
             input("\nPress Enter to continue...")
             continue
@@ -704,15 +703,15 @@ def main():
         
         clear()
         print(f"""
-╔══════════════════════════════════════
-║           Attack Started!            
-╠══════════════════════════════════════
-║ Target: {target:<27} 
-║ Port: {port:<29} 
-║ Duration: {duration} seconds{' '*(19-len(str(duration)))} 
-║ Threads: {threads:<26} 
-║ Target Status: {target_status:<21}
-╚══════════════════════════════════════
++======================================+
+|           Attack Started!            |
++======================================+
+| Target: {target:<27} 
+| Port: {port:<29} 
+| Duration: {duration} seconds{' '*(19-len(str(duration)))} 
+| Threads: {threads:<26} 
+| Target Status: {target_status:<21}
++======================================+
 """)
 
         attack_funcs = {
@@ -739,10 +738,10 @@ def main():
             
         final_status = check_target_status(target)
         print(f"""
-╔══════════════════════════════════════
-║         Attack Completed! 🎯        
-║ Final Target Status: {final_status:<16}
-╚══════════════════════════════════════
++======================================+
+|         Attack Completed! 🎯         |
+| Final Target Status: {final_status:<16}
++======================================+
 """)
         input("\nPress Enter to continue...")
 
